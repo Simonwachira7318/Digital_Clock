@@ -1,0 +1,67 @@
+body {
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background: radial-gradient(ellipse at center, #0206ff 0%, #000 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* font-family: Arial, sans-serif; */
+    font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#clock {
+        border: 5px solid rgb(2, 1, 1);
+        box-shadow: 3px 3px rgb(242, 0, 0), -1em 0 .4em rgb(0, 255, 247);
+        padding: 5%;
+        border-radius: 80%;
+        background-image: url(./tower-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        cursor: pointer;
+}
+#clock:hover{
+    transform: skew(-3deg, -6deg);
+}
+.date {
+    font-size: 25px;
+    margin: 0;
+    padding: 5px;
+    color: #030303;
+    animation: fireAnimation 3s infinite alternate;
+}
+
+.time {
+    font-size: 60px;
+    margin: 0;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #000000;
+    animation: fireAnimation 1s infinite alternate;
+}
+
+.text {
+    font-size: 15px;
+    margin: 0;
+    padding: 5px;
+    color: #000000;
+    animation: fireAnimation 3s infinite alternate;
+}
+/* keyframe  */
+@keyframes fireAnimation {
+    0% {
+        color: rgb(0, 0, 0);
+        text-shadow: 0 0 10px rgb(142, 101, 101), 0 0 20px #f00, 0 0 30px #f00;
+    }
+    50% {
+        color: #000000;
+        text-shadow: 0 0 10px #7a5555, 0 0 20px #002fff, 0 0 30px #000000;
+    }
+    100% {
+        color: rgb(0, 0, 0);
+        text-shadow: 0 0 10px rgb(124, 82, 82), 0 0 20px #f00, 0 0 30px rgb(255, 1, 1);
+    }
+}
